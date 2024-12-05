@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #ffffff;
+}
+.section-1{
+    height: auto;
+    width: 100%;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.parts{
+    border:none;
+    display: flex;
+    align-items: center;
+}
+
+.parts:first-child img{
+    margin-left: 40px;
+}
+ .parts:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.parts:last-child{
+    display: flex;
+    justify-content: end;
+}
+.parts ul{
+    display: flex;
+    align-items: center;
+}
+.parts ul li{
+    list-style: none;
+}
+.parts ul li a{
+    margin-right: 40px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #717171;
+}
+.parts ul li a:first-child{
+    color: black;
+}
+.parts button{
+    margin-right: 40px;
+    height: 30px;
+    width: 80px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid 
+    #b7b8bb;
+}
+.parts button:hover{
+    background-color: #f1ecec;
+}
+.hero{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.hero-content{
+    margin-top: 40px;
+}
+.hero-content h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    line-height: 65px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.hero-content p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #939297;
+    line-height: 28px;
+    text-align: center;
+}
+ .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.hero-content button{
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 50px;
+    width: 150px;
+    background-color: #fdc323
+    ;
+    border: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+.section-2{
+    height: 40vh;
+    width: 100%;
+     background-image: url("C:\\Users\\DELL\\Desktop\\coaching assingnmennt\\ui-ux 3\\052fa9c251086b7d63cb32f1232d4a25.jpg (1600×1200)\\snapedit_1732690135312.jpg");
+   background-position: center;
+   background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* responsive */
+
+@media (max-width:480px){
+    .parts ul li a{
+        display: none;
+    }
+    .hero-content h1{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    .hero-content h1 em{
+        font-size: 35px;
+    }
+    .btn{
+        width: 100%;
+    }
+    .btn-2{
+        width: 100px;
+    }
+}
+@media (max-width:768px){
+    .parts ul li a{
+        display: none;
+    }
+}
